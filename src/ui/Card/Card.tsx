@@ -13,7 +13,7 @@ interface CardSectionProps {
 export function Card({ children, className = '' }: CardProps) {
   return (
     <div
-      className={`bg-white border border-muted-200 rounded-xl overflow-hidden flex flex-col ${className}`}>
+      className={`bg-bg-surface border border-border-main rounded-xl overflow-hidden flex flex-col shadow-xs ${className}`}>
       {children}
     </div>
   );
@@ -21,7 +21,7 @@ export function Card({ children, className = '' }: CardProps) {
 
 export function CardHeader({ children, className = '' }: CardSectionProps) {
   return (
-    <div className={`px-4 py-3 border-b border-muted-200 ${className}`}>
+    <div className={`px-4 py-3 border-b border-border-main ${className}`}>
       {children}
     </div>
   );
@@ -34,7 +34,7 @@ export function CardBody({ children, className = '' }: CardSectionProps) {
 export function CardFooter({ children, className = '' }: CardSectionProps) {
   return (
     <div
-      className={`px-4 py-3 border-t border-muted-200 bg-muted-100 ${className}`}>
+      className={`px-4 py-3 border-t border-border-main bg-bg-base/40 ${className}`}>
       {children}
     </div>
   );

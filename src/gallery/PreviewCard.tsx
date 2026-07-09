@@ -32,7 +32,7 @@ export function PreviewCard({
         </span>
       </CardHeader>
 
-      <CardBody className='flex items-center justify-center bg-muted-100 min-h-24'>
+      <CardBody className='flex items-center justify-center bg-bg-base min-h-24'>
         {preview}
       </CardBody>
 
