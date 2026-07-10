@@ -9,6 +9,7 @@ import { SelectPage } from './pages/SelectPage';
 import { TablePage } from './pages/TablePage';
 import { ModalPage } from './pages/ModalPage';
 import { ToastPage } from './pages/ToastPage';
+import { AppShellPage } from './pages/AppShellPage';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Route path='/table' element={<TablePage />} />
       <Route path='/modal' element={<ModalPage />} />
       <Route path='/toast' element={<ToastPage />} />
+      <Route path='/appshell' element={<AppShellPage />} />
     </Routes>
   );
 }

@@ -155,6 +155,18 @@ export function Home() {
                 </div>
               }
             />
+
+            <PreviewCard
+              title='AppShell'
+              status='stable'
+              description='Sidebar + TopBar, off-canvas on mobile, static on desktop'
+              to='/appshell'
+              preview={
+                <div className='text-xs text-text-muted'>
+                  Click "View" to see it live
+                </div>
+              }
+            />
           </div>
         </section>
       </main>
