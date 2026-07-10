@@ -1,6 +1,8 @@
+import { Phone } from 'lucide-react';
 import { PreviewCard } from '../gallery/PreviewCard';
 import { Button } from '../ui/Button/Button';
 import { ThemeToggle } from '../ui/ThemeToggle/ThemeToggle';
+import { Input } from '../ui/Input/Input';
 
 export function Home() {
   return (
@@ -68,6 +70,20 @@ export function Home() {
                 <Button variant='primary' size='sm'>
                   Load Credit
                 </Button>
+              }
+            />
+
+            <PreviewCard
+              title='Input'
+              status='stable'
+              description='Text input with label, error, hint, icon slots'
+              to='/input'
+              preview={
+                <Input
+                  placeholder='2547XXXXXXXX'
+                  leftIcon={<Phone className='h-4 w-4' />}
+                  className='max-w-45'
+                />
               }
             />
           </div>
