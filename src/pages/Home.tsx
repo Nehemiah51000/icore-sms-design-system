@@ -18,7 +18,7 @@ export function Home() {
           />
           <div>
             <h1 className='text-lg sm:text-xl font-semibold text-text-main'>
-              ICORE Design System
+              ICORE SMS Design System
             </h1>
             <p className='text-xs text-text-muted'>
               Shared components for the Admin Dashboard and Client Portal
@@ -128,6 +128,18 @@ export function Home() {
               preview={
                 <div className='text-xs text-text-muted'>
                   5 sub-components + Pagination
+                </div>
+              }
+            />
+
+            <PreviewCard
+              title='Modal'
+              status='stable'
+              description='Native dialog-based, focus-trapped, with footer slot'
+              to='/modal'
+              preview={
+                <div className='text-xs text-text-muted'>
+                  Click "View" to see it live
                 </div>
               }
             />
