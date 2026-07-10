@@ -143,6 +143,18 @@ export function Home() {
                 </div>
               }
             />
+
+            <PreviewCard
+              title='Toast'
+              status='stable'
+              description='Sonner, themed — success, error, warning, info, loading'
+              to='/toast'
+              preview={
+                <div className='text-xs text-text-muted'>
+                  Click "View" to try it live
+                </div>
+              }
+            />
           </div>
         </section>
       </main>

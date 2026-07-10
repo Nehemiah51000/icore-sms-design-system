@@ -8,6 +8,7 @@ import { StatusBadgePage } from './pages/StatusBadgePage';
 import { SelectPage } from './pages/SelectPage';
 import { TablePage } from './pages/TablePage';
 import { ModalPage } from './pages/ModalPage';
+import { ToastPage } from './pages/ToastPage';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Route path='/select' element={<SelectPage />} />
       <Route path='/table' element={<TablePage />} />
       <Route path='/modal' element={<ModalPage />} />
+      <Route path='/toast' element={<ToastPage />} />
     </Routes>
   );
 }
