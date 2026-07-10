@@ -15,7 +15,7 @@ export function Toaster() {
         unstyled: true,
         classNames: {
           toast:
-            'flex items-start gap-3 w-full rounded-xl border border-border-main bg-bg-surface px-4 py-3 shadow-lg text-sm text-text-main',
+            'relative flex items-start gap-3 w-full rounded-xl border border-border-main bg-bg-surface pl-4 pr-9 py-3 shadow-lg text-sm text-text-main',
           title: 'font-medium text-text-main',
           description: 'text-text-muted text-xs mt-0.5',
           actionButton:
@@ -23,7 +23,7 @@ export function Toaster() {
           cancelButton:
             'bg-bg-base text-text-muted text-xs font-medium px-2.5 py-1.5 rounded-lg cursor-pointer',
           closeButton:
-            'bg-bg-surface border border-border-main text-text-muted',
+            '!absolute !right-2 !top-2 !left-auto !translate-x-0 !translate-y-0 h-6 w-6 flex items-center justify-center rounded-full !border-none !bg-transparent text-text-muted hover:text-text-main hover:!bg-bg-surface-hover cursor-pointer transition-colors',
           success: 'border-l-4 !border-l-success-500',
           error: 'border-l-4 !border-l-error-500',
           warning: 'border-l-4 !border-l-warning-500',
