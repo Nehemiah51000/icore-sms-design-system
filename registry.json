@@ -1,0 +1,32 @@
+{
+  "Button": { "files": ["ui/Button/Button.tsx"], "deps": ["lib/cn.ts"] },
+  "Input": { "files": ["ui/Input/Input.tsx"], "deps": ["lib/cn.ts"] },
+  "Select": { "files": ["ui/Select/Select.tsx"], "deps": ["lib/cn.ts"] },
+  "StatusBadge": {
+    "files": ["ui/StatusBadge/StatusBadge.tsx"],
+    "deps": ["lib/cn.ts"]
+  },
+  "Card": { "files": ["ui/Card/Card.tsx"], "deps": [] },
+  "Table": { "files": ["ui/Table/Table.tsx"], "deps": ["lib/cn.ts"] },
+  "Pagination": {
+    "files": ["ui/Pagination/Pagination.tsx"],
+    "deps": ["lib/cn.ts"]
+  },
+  "Modal": { "files": ["ui/Modal/Modal.tsx"], "deps": ["lib/cn.ts"] },
+  "Toast": { "files": ["ui/Toast/Toaster.tsx"], "deps": [] },
+  "ThemeToggle": { "files": ["ui/ThemeToggle/ThemeToggle.tsx"], "deps": [] },
+  "Sidebar": { "files": ["layout/Sidebar/Sidebar.tsx"], "deps": ["lib/cn.ts"] },
+  "TopBar": { "files": ["layout/TopBar/TopBar.tsx"], "deps": [] },
+  "AppShell": {
+    "files": ["layout/AppShell/AppShell.tsx"],
+    "deps": [
+      "layout/Sidebar/Sidebar.tsx",
+      "layout/TopBar/TopBar.tsx",
+      "lib/cn.ts"
+    ]
+  },
+  "tokens": {
+    "files": ["tokens/colors.ts", "tokens/typography.ts"],
+    "deps": []
+  }
+}
