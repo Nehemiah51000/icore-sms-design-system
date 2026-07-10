@@ -3,6 +3,7 @@ import { PreviewCard } from '../gallery/PreviewCard';
 import { Button } from '../ui/Button/Button';
 import { ThemeToggle } from '../ui/ThemeToggle/ThemeToggle';
 import { Input } from '../ui/Input/Input';
+import { StatusBadge } from '../ui/StatusBadge/StatusBadge';
 
 export function Home() {
   return (
@@ -84,6 +85,23 @@ export function Home() {
                   leftIcon={<Phone className='h-4 w-4' />}
                   className='max-w-45'
                 />
+              }
+            />
+
+            <PreviewCard
+              title='StatusBadge'
+              status='stable'
+              description='Success, error, warning, pending, info states'
+              to='/status-badge'
+              preview={
+                <div className='flex gap-2'>
+                  <StatusBadge status='success' size='sm'>
+                    Success
+                  </StatusBadge>
+                  <StatusBadge status='error' size='sm'>
+                    Failed
+                  </StatusBadge>
+                </div>
               }
             />
           </div>

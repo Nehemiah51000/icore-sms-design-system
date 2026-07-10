@@ -4,6 +4,7 @@ import { ColorsPage } from './pages/ColorPage';
 import { TypographyPage } from './pages/TypographyPage';
 import { ButtonPage } from './pages/ButtonPage';
 import { InputPage } from './pages/InputPage';
+import { StatusBadgePage } from './pages/StatusBadgePage';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Route path='/typography' element={<TypographyPage />} />
       <Route path='/button' element={<ButtonPage />} />
       <Route path='/input' element={<InputPage />} />
+      <Route path='/status-badge' element={<StatusBadgePage />} />
     </Routes>
   );
 }
