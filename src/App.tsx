@@ -5,6 +5,7 @@ import { TypographyPage } from './pages/TypographyPage';
 import { ButtonPage } from './pages/ButtonPage';
 import { InputPage } from './pages/InputPage';
 import { StatusBadgePage } from './pages/StatusBadgePage';
+import { SelectPage } from './pages/SelectPage';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Route path='/button' element={<ButtonPage />} />
       <Route path='/input' element={<InputPage />} />
       <Route path='/status-badge' element={<StatusBadgePage />} />
+      <Route path='/select' element={<SelectPage />} />
     </Routes>
   );
 }

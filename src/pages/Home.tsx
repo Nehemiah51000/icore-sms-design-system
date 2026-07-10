@@ -4,6 +4,7 @@ import { Button } from '../ui/Button/Button';
 import { ThemeToggle } from '../ui/ThemeToggle/ThemeToggle';
 import { Input } from '../ui/Input/Input';
 import { StatusBadge } from '../ui/StatusBadge/StatusBadge';
+import { Select } from '../ui/Select/Select';
 
 export function Home() {
   return (
@@ -83,7 +84,7 @@ export function Home() {
                 <Input
                   placeholder='2547XXXXXXXX'
                   leftIcon={<Phone className='h-4 w-4' />}
-                  className='max-w-45'
+                  className='max-w-full'
                 />
               }
             />
@@ -102,6 +103,20 @@ export function Home() {
                     Failed
                   </StatusBadge>
                 </div>
+              }
+            />
+
+            <PreviewCard
+              title='Select'
+              status='stable'
+              description='Native-backed dropdown for providers, status filters'
+              to='/select'
+              preview={
+                <Select
+                  options={[{ value: 'zettatel', label: 'Zettatel' }]}
+                  defaultValue='zettatel'
+                  className='max-w-full'
+                />
               }
             />
           </div>
