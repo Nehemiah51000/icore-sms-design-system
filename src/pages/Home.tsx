@@ -119,6 +119,18 @@ export function Home() {
                 />
               }
             />
+
+            <PreviewCard
+              title='Table'
+              status='stable'
+              description='Horizontal-scroll table, loading/empty states, pagination'
+              to='/table'
+              preview={
+                <div className='text-xs text-text-muted'>
+                  5 sub-components + Pagination
+                </div>
+              }
+            />
           </div>
         </section>
       </main>

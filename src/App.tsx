@@ -6,6 +6,7 @@ import { ButtonPage } from './pages/ButtonPage';
 import { InputPage } from './pages/InputPage';
 import { StatusBadgePage } from './pages/StatusBadgePage';
 import { SelectPage } from './pages/SelectPage';
+import { TablePage } from './pages/TablePage';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path='/input' element={<InputPage />} />
       <Route path='/status-badge' element={<StatusBadgePage />} />
       <Route path='/select' element={<SelectPage />} />
+      <Route path='/table' element={<TablePage />} />
     </Routes>
   );
 }
