@@ -1,4 +1,5 @@
 import { PreviewCard } from '../gallery/PreviewCard';
+import { Button } from '../ui/Button/Button';
 import { ThemeToggle } from '../ui/ThemeToggle/ThemeToggle';
 
 export function Home() {
@@ -60,13 +61,13 @@ export function Home() {
           <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4'>
             <PreviewCard
               title='Button'
-              status='wip'
+              status='stable'
               description='Primary, secondary, destructive, ghost variants'
               to='/button'
               preview={
-                <button className='bg-navy-500 text-white text-sm px-3 py-1.5 rounded-lg font-medium cursor-pointer'>
+                <Button variant='primary' size='sm'>
                   Load Credit
-                </button>
+                </Button>
               }
             />
           </div>

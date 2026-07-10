@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import { Home } from './pages/Home';
 import { ColorsPage } from './pages/ColorPage';
 import { TypographyPage } from './pages/TypographyPage';
+import { ButtonPage } from './pages/ButtonPage';
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <Route path='/' element={<Home />} />
       <Route path='/colors' element={<ColorsPage />} />
       <Route path='/typography' element={<TypographyPage />} />
-      {/* Component detail routes get added here as we build each one */}
+      <Route path='/button' element={<ButtonPage />} />
     </Routes>
   );
 }
