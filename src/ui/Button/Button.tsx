@@ -2,9 +2,8 @@ import { forwardRef, type ButtonHTMLAttributes } from 'react';
 import { cva, type VariantProps } from 'class-variance-authority';
 import { Loader2 } from 'lucide-react';
 import { cn } from '../../lib/cn';
-
 const buttonVariants = cva(
-  'inline-flex items-center justify-center gap-2 rounded-lg font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none cursor-pointer',
+  'inline-flex items-center justify-center gap-2 rounded-lg font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed',
   {
     variants: {
       variant: {
@@ -25,17 +24,22 @@ const buttonVariants = cva(
       fullWidth: {
         true: 'w-full',
       },
+      disabled: {
+        true: 'cursor-not-allowed',
+        false: 'cursor-pointer',
+      },
     },
     defaultVariants: {
       variant: 'primary',
       size: 'md',
+      disabled: false,
     },
   },
 );
 
 export interface ButtonProps
   extends
-    ButtonHTMLAttributes<HTMLButtonElement>,
+    Omit<ButtonHTMLAttributes<HTMLButtonElement>, 'disabled'>,
     VariantProps<typeof buttonVariants> {
   loading?: boolean;
 }
@@ -54,11 +58,21 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     },
     ref,
   ) => {
+    const isDisabled = disabled || loading;
+
     return (
       <button
         ref={ref}
-        className={cn(buttonVariants({ variant, size, fullWidth, className }))}
-        disabled={disabled || loading}
+        className={cn(
+          buttonVariants({
+            variant,
+            size,
+            fullWidth,
+            disabled: isDisabled,
+            className,
+          }),
+        )}
+        disabled={isDisabled}
         {...props}>
         {loading && <Loader2 className='h-4 w-4 animate-spin' />}
         {children}
