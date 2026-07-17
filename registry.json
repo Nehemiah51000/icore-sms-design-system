@@ -28,5 +28,17 @@
   "tokens": {
     "files": ["tokens/colors.ts", "tokens/typography.ts"],
     "deps": []
+  },
+  "ErrorBoundary": {
+    "files": ["ui/ErrorBoundary/ErrorBoundary.tsx"],
+    "deps": ["ui/Button/Button.tsx"]
+  },
+  "QueryErrorState": {
+    "files": ["ui/QueryErrorState/QueryErrorState.tsx"],
+    "deps": ["ui/Button/Button.tsx"]
+  },
+  "OfflineBanner": {
+    "files": ["ui/OfflineBanner/OfflineBanner.tsx"],
+    "deps": []
   }
 }
