@@ -40,5 +40,9 @@
   "OfflineBanner": {
     "files": ["ui/OfflineBanner/OfflineBanner.tsx"],
     "deps": []
+  },
+  "PhoneInput": {
+    "files": ["ui/PhoneInput/PhoneInput.tsx"],
+    "deps": []
   }
 }
